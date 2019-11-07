@@ -4,26 +4,29 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <title>Care4Me</title>
-<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="css/homepage.css"/>
-<link rel="stylesheet" type="text/css" id="sliderStylesheet" href="style.css"/>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="/static/css/homepage.css"/>
+<link rel="stylesheet" type="text/css" id="sliderStylesheet" href="/static/css/style.css"/>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  </style> 
 </head>
 <body>
 
-		<script type="text/javascript">
-			/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-			(function(d, m){
-			  var kommunicateSettings = {"appId":"18c1934fecdf6bc5f8562c754167f11c1","popupWidget":true,"automaticChatOpenOnNavigation":true};
-			  var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-			  s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-			  var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-			  window.kommunicate = m; m._globals = kommunicateSettings;
-			})(document, window.kommunicate || {});
-		  </script>
+	<script type="text/javascript">
+		/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+		(function(d, m){
+		  var kommunicateSettings = {"appId":"18c1934fecdf6bc5f8562c754167f11c1","popupWidget":true,"automaticChatOpenOnNavigation":true};
+		  var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+		  s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+		  var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+		  window.kommunicate = m; m._globals = kommunicateSettings;
+		})(document, window.kommunicate || {});
+	</script>
 
 <div id="homepage" class="">
 	<svg class="computer_desk_laptop_stethosco">
 		<pattern elementId="computer_desk_laptop_stethosco_A0_Rectangle_2" id="computer_desk_laptop_stethosco_A0_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
-			<image x="0" y="0" width="100%" height="100%" href="images/computer_desk_laptop_stethosco_A0_Rectangle_2_pattern.png" xlink:href="computer_desk_laptop_stethosco_A0_Rectangle_2_pattern.png"></image>
+			<image x="0" y="0" width="100%" height="100%" href="/static/images/computer_desk_laptop_stethosco_A0_Rectangle_2_pattern.png" xlink:href="computer_desk_laptop_stethosco_A0_Rectangle_2_pattern.png"></image>
 		</pattern>
 		<rect fill="url(#computer_desk_laptop_stethosco_A0_Rectangle_2_pattern)" id="computer_desk_laptop_stethosco" rx="0" ry="0" x="0" y="0" width="1924.5" height="1228">
 		</rect>
@@ -39,16 +42,16 @@
 				</rect>
 			</svg>
 			<div id="Home">
-					<a href="homepage.html"><span>Home</span></a>
+					<a href="/"><span>Home</span></a>
 			</div>
 			<div id="About_Us">
-				<a href="about_us.html"> <span>About Us</span> </a>
+				<a href="/about_us"> <span>About Us</span> </a>
 			</div>
 			<div id="Our_Services">
 					<a href="#why_choose_us"> <span>Our Services</span> </a>
 			</div>
 			<div id="Contact_Us">
-					<a href="contact_us.html" target="_blank"> <span>Contact Us</span> </a>
+					<a href="/contact_us" target="_blank"> <span>Contact Us</span> </a>
 			</div>
 			<div id="logo">
 				<div id="Care4Me">
@@ -62,7 +65,7 @@
 		<svg style="width:inherit;height:inherit;overflow:visible;">
 			<rect fill="url(#Mask_Group_5_A0_Group_26_pattern)" width="100%" height="100%"></rect>
 				<pattern elementId="Mask_Group_5_A0_Group_26" id="Mask_Group_5_A0_Group_26_pattern" x="0" y="0" width="100%" height="100%">
-					<image x="0" y="0" width="100%" height="100%" href="images/Mask_Group_5_A0_Group_26_pattern.png" xlink:href="Mask_Group_5_A0_Group_26_pattern.png"></image>
+					<image x="0" y="0" width="100%" height="100%" href="/static/images/Mask_Group_5_A0_Group_26_pattern.png" xlink:href="Mask_Group_5_A0_Group_26_pattern.png"></image>
 				</pattern>
 				</svg>
 			</div>
@@ -84,7 +87,7 @@
 					</rect>
 				</svg>
 				<div id="Get_in_touch_with_us">
-					<a href="index.html"><span>Get in touch with us</span> </a>
+					<a href="/static/index.html"><span>Get in touch with us</span> </a>
 				</div>
 			</div>
 		</div>
@@ -92,10 +95,10 @@
 	<div id="why_choose_us">
 		<div id="choose1">
 			<div id="Group_4">
-				<img src="images/drop.png" width="150px">
+				<img src="/static/images/drop.png" width="150px">
 			</div>
 			<div id="Blood_Bank_Invntory">
-				<span>Blood Bank Invntory</span>
+				<span>Blood Bank Inventory</span>
 			</div>
 			<div id="Need_blood_for_Emergencies____">
 				<span>Need blood for Emergencies !<br/><br/>Don't worry we're there with you ALWAYS .</span>
@@ -103,7 +106,7 @@
 		</div>
 		<div id="choose2">
 			<div id="Group_4_A0_Group_12">
-				<img src="images/chat.svg" width="150px">
+				<img src="/static/images/chat.svg" width="150px">
 			</div>
 			<div id="Symptom_Detection__ChatBot_">
 				<span>Symptom Detection (ChatBot)</span>
@@ -114,7 +117,7 @@
 		</div>
 		<div id="choose3">
 				<div id="Group_4_A0_Group_12">
-				<img src="images/awareness.png" width="150px">
+				<img src="/static/images/awareness.png" width="150px">
 				</div>
 			<div id="Awareness">
 				<span>Awareness</span>
