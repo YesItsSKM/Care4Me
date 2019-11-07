@@ -6,13 +6,55 @@
 <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="/static/css/homepage.css"/>
 <link rel="stylesheet" type="text/css" id="sliderStylesheet" href="/static/css/style.css"/>
 <style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  margin-top: 25%;
+  margin-left: 25%;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 40%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  margin-top: 25%;
+  margin-right: 200px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 </style> 
 </head>
 <body>
-<form method='post'>
-    <input type="text" name="blood_group">
-    <input type="submit">
+<form method='post' class="example">
+    <input type="text" name="blood_group" placeholder="Enter blood group here...">
+    <button type="submit"> SUBMIT </button>
 </form>
 </body>
 </html>

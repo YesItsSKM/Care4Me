@@ -24,19 +24,19 @@ body {
     position: relative;
 }
 .main-banner #imgban3 {
-    background-image: url(img/img3.png);
+    background-image: url(/static/img/img3.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .main-banner #imgban2 {
-    background-image: url(img/img2.png);
+    background-image: url(/static/img/img2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .main-banner #imgban1 {
-    background-image: url(img/img1.png);
+    background-image: url(/static/img/img1.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
